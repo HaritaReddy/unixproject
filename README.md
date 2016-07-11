@@ -1,9 +1,9 @@
 # unixproject
 ##traveltool
 This consists of three main applications.
-*Finding the running status of a train
-*Downloading a book from the internet
-*Enquiring about hotels in a city 
+* Finding the running status of a train
+* Downloading a book from the internet
+* Enquiring about hotels in a city 
  
  For all of these applications, beautifulsoup4 is needed, as well as requests module. If these modules aren't present installer.sh will ask your permission and install the required modules. 
  
