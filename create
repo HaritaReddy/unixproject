@@ -1,0 +1,20 @@
+#!/bin/bash/
+echo "Enter the name you want to give to the directory in which you want your pictures to be saved"
+read dirname
+
+var2=`whoami`
+if [ $1 = "home" ]
+then
+addr="/home/$var2/"
+else
+addr="/home/$var2/$1/"
+fi
+ch="$addr"
+
+mkdir "$ch$dirname"
+
+
+vari=$(ls | grep ^ttpic.*)
+
+mv $vari "$addr/$dirname"
+
