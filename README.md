@@ -1,4 +1,5 @@
-# unixproject
+# unixproject 
+After downloading the zip file and extracting it, enter the directory and type "bash setup.sh". This will make all the required files executable and you can run traveltool.sh as ./traveltool.sh [options]. The options are -r,-h, -r update.
 ##traveltool
 This consists of three main applications.
 * Finding the running status of a train
