@@ -43,14 +43,14 @@ except selenium.common.exceptions.webdriverexception:
  exit(-1)
 driver.get('http://www.hotelscombined.in/')
 elem=driver.find_element_by_id('hc_f_id_noDates_1')
-elem.click()
+elem.click() #Selects the checkbox
 elem1=driver.find_element_by_id('hc_f_id_where_1')
 print "Enter the city name"
 city=raw_input()
 entry=city
-elem1.send_keys(entry)
+elem1.send_keys(entry) #Sends user entry keys to the webpage's input box 
 elem2=driver.find_element_by_class_name('hc_f_btn_v15')
-elem2.click()
+elem2.click() #Navigates to the required webpage
 choices=driver.find_element_by_id('hc_usr').find_elements_by_tag_name('div')
 
 #Gives the possible locations
@@ -129,7 +129,7 @@ for i in range(0,len(links)):
  finallinks.append(links[i]['href'])
 print "\n\n"
 print "There are ",len(links)," images of the hotel. How many do you want to download? Press 0 to exit."
-no1=raw_input()
+no1=raw_input() #Takes user input
 no=int(no1)
 if no==0:
  exit(0)
@@ -146,7 +146,7 @@ for i in range(0,no):
  filename="ttpic"+ser+".jpg"
  URL=finallinks[i];
  urllib.urlretrieve(URL, filename)
-
+#Moves the images to the directory as specified by the user
 if choice==1:
  os.system("bash create Downloads")
 elif choice==2:
