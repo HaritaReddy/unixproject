@@ -1,8 +1,5 @@
 #!/bin/bash
-chmod +x rail.py
-chmod +x hotel.py
-chmod +x installer.sh
-chmod +x bookdownload.py
+
 if [ "$1" = "-r" ]
 then
 if [ "$2" = "update" ]
