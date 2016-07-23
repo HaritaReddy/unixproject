@@ -77,8 +77,7 @@ f = open("inter", 'w')
 for item in text:
   f.write(item.encode('utf-8'))
   f.write('\n')
-# f.write(item.getText().encode('utf-8'))
-# f.write('\n\n')
+#Writes the content of book into the file
 
 f.close()
 
