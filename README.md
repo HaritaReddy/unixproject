@@ -6,6 +6,7 @@ This consists of three main applications.
 * Enquiring about hotels in a city 
  
  For all of these applications, beautifulsoup4 is needed, as well as requests module. If these modules aren't present installer.sh will ask your permission and install the required modules. 
+ All the applications are interactive.
  
  
 The traveltool.sh file runs the other files depending on the options given to it. 
